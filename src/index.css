@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles from original file (trimmed for brevity) */
+body { box-sizing: border-box; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
+
+.reveal { opacity: 0; transform: translateY(60px); transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.reveal.active { opacity: 1; transform: translateY(0); }
+.reveal-left { opacity: 0; transform: translateX(-60px); transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.reveal-left.active { opacity: 1; transform: translateX(0); }
+.reveal-right { opacity: 0; transform: translateX(60px); transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.reveal-right.active { opacity: 1; transform: translateX(0); }
+.reveal-scale { opacity: 0; transform: scale(0.8); transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.reveal-scale.active { opacity: 1; transform: scale(1); }
+
+.gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.gradient-animated { background: linear-gradient(270deg, #667eea, #764ba2, #f093fb); background-size: 400% 400%; animation: gradientShift 8s ease infinite; }
+@keyframes gradientShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+.gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+.card-hover { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+.card-hover:hover { transform: translateY(-16px) scale(1.02); box-shadow: 0 30px 60px -12px rgba(102, 126, 234, 0.35); }
+
+.pulse-soft { animation: pulseSoft 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+@keyframes pulseSoft { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.8; transform: scale(1.05); } }
+
+.shimmer { position: relative; overflow: hidden; }
+.shimmer::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); animation: shimmer 3s infinite; }
+@keyframes shimmer { 0% { left: -100%; } 100% { left: 100%; } }
+
+.particles { position: absolute; width: 100%; height: 100%; overflow: hidden; pointer-events: none; }
+.particle { position: absolute; background: rgba(102, 126, 234, 0.12); border-radius: 50%; animation: particleFloat 15s infinite ease-in-out; }
+@keyframes particleFloat { 0%, 100% { transform: translateY(0) translateX(0); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateY(-100vh) translateX(100px); opacity: 0; } }
+
+/* small helpers */
+.ripple { position: relative; overflow: hidden; }
+
+
+/* === Slide In Animations === */
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 1s ease forwards;
+}
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideInRight 1s ease forwards;
+}
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* === Bounce Hover === */
+.bounce-hover {
+  transition: transform 0.25s ease;
+}
+.bounce-hover:hover {
+  transform: translateY(-5px);
+}
+
+/* === Float (Cards & Boxes) === */
+.float {
+  animation: floatBox 6s ease-in-out infinite;
+}
+@keyframes floatBox {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* === Shake Hover === */
+.shake-hover:hover {
+  animation: shake 0.4s ease-in-out;
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  30% { transform: translateX(-4px); }
+  60% { transform: translateX(4px); }
+}
+
+/* === Icon Spin === */
+.icon-spin > svg {
+  animation: spinIcon 6s linear infinite;
+}
+@keyframes spinIcon {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+/* === Image Hover === */
+.image-hover {
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.image-hover:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+/* === Glow Button === */
+.glow {
+  box-shadow: 0 0 25px rgba(118, 73, 217, 0.4);
+}
+.glow:hover {
+  box-shadow: 0 0 35px rgba(118, 73, 217, 0.6);
+}
+
+/* === Ripple Click Effect === */
+.ripple:active {
+  transform: scale(0.97);
+}
