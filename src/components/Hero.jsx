@@ -20,7 +20,7 @@ export default function Hero(){
           </h1>
           <p className="reveal stagger-3 text-xl text-gray-600 mb-8 leading-relaxed" id="hero-description">We help brands grow with creative content, smart marketing & impactful digital strategies.</p>
           <div className="reveal stagger-4 flex flex-wrap gap-4">
-            <a href="#contact" className="px-8 py-4 gradient-animated text-white rounded-full font-semibold ripple glow transition-all duration-300 bounce-hover"> Start Your Journey </a>
+            <a href="#contact" className="px-6 py-2.5 gradient-bg text-white rounded-full font-semibold ripple glow transition-all duration-300 bounce-hover"> Start Your Journey </a>
             <a href="#services" className="px-8 py-4 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-all duration-300 bounce-hover"> Explore Services </a>
           </div>
           <div className="reveal stagger-5 mt-12 flex items-center gap-8">

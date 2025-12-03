@@ -5,7 +5,9 @@ import Services from './components/Services'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
+import ScrollEffects from './components/ScrollEffects'
 import Footer from './components/Footer'
+
 
 export default function App(){
   const [toast, setToast] = useState(null)

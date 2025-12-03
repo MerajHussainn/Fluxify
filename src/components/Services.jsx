@@ -151,31 +151,30 @@ export default function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* SEO Service */}
-            <div className="reveal reveal-scale stagger-1 card-hover bg-white p-8 rounded-3xl shadow-lg border-gradient">
-              <div className="icon-spin w-16 h-16 gradient-animated rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
+             <div className="reveal reveal-scale stagger-2 card-hover bg-white p-8 rounded-3xl shadow-lg">
+              <div className="icon-spin w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">SEO Optimization</h3>
               <p className="text-gray-600 mb-4">
-                Dominate search rankings with strategic SEO that brings organic traffic and qualified leads to your website.
+             Dominate search rankings with strategic SEO that brings organic traffic and qualified leads to your website.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start text-sm text-gray-600">
                   <svg className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg> Keyword Research &amp; Strategy
+                  </svg> Keyword Research  &amp; Strategy
                 </li>
                 <li className="flex items-start text-sm text-gray-600">
                   <svg className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg> On-Page &amp; Technical SEO
+                  </svg> On-Page
                 </li>
                 <li className="flex items-start text-sm text-gray-600">
                   <svg className="w-5 h-5 text-purple-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg> Link Building &amp; Authority
+                  </svg> Technical SEO
                 </li>
               </ul>
               <a href="#contact" className="text-purple-600 font-semibold hover:text-purple-700 flex items-center group">
