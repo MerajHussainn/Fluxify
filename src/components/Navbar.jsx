@@ -64,8 +64,15 @@ export default function Navbar() {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
+        nav a.active,
+  nav .active
+  {
+    color: #7c3aed;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 2px;
+  }
             
-        }
+        
       `}</style>
 
       <nav className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-lg transition-transform duration-500 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
